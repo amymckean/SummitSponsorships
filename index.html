@@ -8,7 +8,7 @@
 <link rel="icon" href="/assets/summit-favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/assets/summit-favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/summit-apple-touch-icon.png">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet"/>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root { --navy:#1d4358; --deep:#022e4b; --band:#00394c; --teal:#0b7784; --bright:#0fafaf; --pale:#ebf7f7; --line:#d3e6e8; --soft:#4f6672; --white:#fff; }
@@ -148,6 +148,106 @@
   .site-foot a.m { color:#7fd3d6; }
   .form-wrap { max-width:1000px; padding-top:34px; }
   @media (max-width:640px) { .site-nav { margin-left:0; } .hero2 { padding:60px 20px 70px; } }
+
+  /* ---- v2: layout and type modeled on playsummit.org/sponsor ---- */
+  body { font-family:'Montserrat','Inter',sans-serif; font-weight:400; }
+  h1,h2,.cond { font-family:'Montserrat',sans-serif; text-transform:none; }
+  .site-nav a, .cta, .tier .choose, .submit-btn, .site-foot nav a, .eyebrow, .dl a { font-family:'Montserrat',sans-serif; }
+  .site-nav a { font-weight:600; font-size:13px; letter-spacing:.12em; }
+  .hero3 { background:#fff; padding:44px 20px 0; }
+  .hero3-in { max-width:1180px; margin:0 auto; background:#264257; border-radius:2px; padding:64px 56px; display:grid; grid-template-columns:1.1fr 1fr; gap:48px; align-items:center; }
+  .hero3 .eb { font-weight:700; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#9fe0db; margin-bottom:22px; }
+  .hero3 h1 { font-weight:800; font-size:clamp(40px,6vw,76px); line-height:1.05; color:#fff; letter-spacing:-.02em; }
+  .hero3 h1 span { color:#9fe0db; display:block; }
+  .hero3 p { margin-top:26px; font-weight:300; font-size:18px; line-height:1.6; color:#e6f1f2; max-width:520px; }
+  .btn3 { display:inline-block; margin-top:34px; padding:17px 30px; background:#56b3b1; color:#264257; border-radius:4px; font-weight:700; font-size:14px; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; border:0; cursor:pointer; transition:background .15s; }
+  .btn3:hover { background:#9fe0db; }
+  .hero3 img { width:100%; height:auto; border-radius:22px; display:block; aspect-ratio:4/3; object-fit:cover; }
+  .who { max-width:1180px; margin:0 auto; padding:76px 56px; display:grid; grid-template-columns:1fr 1.25fr; gap:56px; align-items:start; }
+  .eyebrow2 { font-weight:700; font-size:12.5px; letter-spacing:.2em; text-transform:uppercase; color:#337a8c; margin-bottom:12px; }
+  .h2b { font-weight:800; font-size:clamp(32px,4.4vw,50px); line-height:1.1; color:#264257; letter-spacing:-.02em; }
+  .who p { font-weight:300; font-size:18px; line-height:1.75; color:#53636f; }
+  .who p b { font-weight:600; color:#264257; }
+  .band-gray { background:#ebebef; padding:76px 20px; }
+  .band-light { background:#f7f8fa; padding:76px 20px 60px; }
+  .center { text-align:center; }
+  .wrap3 { max-width:1180px; margin:0 auto; }
+  .sub3 { font-weight:300; font-size:17px; color:#53636f; margin-top:12px; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:44px; text-align:left; }
+  .sc { background:#fff; border-radius:8px; padding:34px 28px 36px; box-shadow:0 1px 2px rgba(0,0,0,.04); }
+  .sc .n { font-weight:800; font-size:34px; color:#337a8c; letter-spacing:-.01em; }
+  .sc h3 { margin-top:18px; font-weight:700; font-size:19px; color:#264257; }
+  .sc p { margin-top:10px; font-weight:300; font-size:15.5px; line-height:1.6; color:#53636f; }
+  .tc { background:#fff; border:1px solid #dfe3e8; border-top:6px solid #337a8c; border-radius:6px; padding:30px 28px; display:flex; flex-direction:column; }
+  .tc .nm3 { font-weight:700; font-size:13.5px; letter-spacing:.18em; text-transform:uppercase; color:#337a8c; }
+  .tc .pr3 { margin-top:14px; font-weight:800; font-size:44px; color:#264257; letter-spacing:-.02em; }
+  .tc p { margin:22px 0 28px; font-weight:300; font-size:16px; line-height:1.7; color:#3e4f5b; flex:1; }
+  .tc p b { font-weight:700; color:#264257; }
+  .tc .go { padding:15px 12px; border:2px solid #337a8c; border-radius:4px; background:#fff; color:#337a8c; font-family:'Montserrat',sans-serif; font-weight:700; font-size:13px; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; text-align:center; transition:all .15s; }
+  .tc .go:hover { background:#337a8c; color:#fff; }
+  .tc.dark { background:#264257; border-color:#264257; border-top-color:#56b3b1; }
+  .tc.dark .nm3 { color:#9fe0db; } .tc.dark .pr3 { color:#fff; } .tc.dark p { color:#d9e7ea; } .tc.dark p b { color:#fff; }
+  .tc.dark .go { background:#56b3b1; border-color:#56b3b1; color:#264257; } .tc.dark .go:hover { background:#9fe0db; border-color:#9fe0db; }
+  .inkind { margin-top:20px; background:#ebebef; border-radius:8px; padding:28px 32px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; text-align:left; }
+  .inkind h3 { font-weight:700; font-size:22px; color:#264257; margin-top:6px; }
+  .inkind p { font-weight:300; font-size:15.5px; color:#53636f; margin-top:6px; }
+  .inkind .go { padding:15px 26px; border:2px solid #337a8c; border-radius:4px; background:transparent; color:#337a8c; font-family:'Montserrat',sans-serif; font-weight:700; font-size:13px; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; }
+  .inkind .go:hover { background:#337a8c; color:#fff; }
+  .dl3 { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:22px; }
+  .dl3 a { font-weight:700; font-size:12.5px; letter-spacing:.08em; text-transform:uppercase; color:#337a8c; text-decoration:none; border:2px solid #337a8c; border-radius:4px; padding:10px 18px; }
+  .dl3 a:hover { background:#337a8c; color:#fff; }
+  .signup3 { max-width:1180px; margin:0 auto; padding:72px 20px 20px; }
+  .signup3 h2 { text-align:center; font-family:'Inter',sans-serif; font-weight:800; font-size:clamp(38px,6vw,76px); letter-spacing:-.03em; text-transform:uppercase; color:#337a8c; margin-bottom:44px; }
+  .signup3-grid { display:grid; grid-template-columns:1.1fr 1fr; gap:56px; align-items:start; }
+  .signup3 img { width:100%; border-radius:22px; display:block; margin-top:40px; }
+  #sponsor-form { background:none; border:0; padding:0; margin:0; }
+  #sponsor-form label { font-size:16px; font-weight:300; letter-spacing:0; color:#264257; }
+  #sponsor-form input, #sponsor-form select, #sponsor-form textarea { border:1px solid #264257; border-radius:0; background:#fff; font-family:'Montserrat',sans-serif; font-weight:300; padding:13px 12px; }
+  #sponsor-form .submit-btn { width:auto; display:inline-block; padding:14px 34px; background:#56b3b1; color:#fff; border-radius:12px; font-size:15px; font-weight:500; letter-spacing:.02em; text-transform:none; }
+  #sponsor-form .submit-btn:hover { background:#264257; }
+  .thanks-card { background:#ebf7f7; }
+  .give-sec { background:#264257; padding:70px 20px; margin-top:56px; }
+  #give { max-width:1180px; margin:0 auto; color:#fff; padding:0 36px; }
+  #give .eyebrow2 { color:#9fe0db; }
+  #give .h2w { font-weight:800; font-size:clamp(32px,4.4vw,50px); letter-spacing:-.02em; color:#fff; margin-bottom:16px; }
+  #give .h2w::after { display:none; }
+  #give .lead { color:#e6f1f2; font-weight:300; font-size:17px; line-height:1.7; max-width:720px; margin:0 0 24px; }
+  #give .amts { max-width:620px; }
+  #give .amt { background:transparent; border:1px solid #56b3b1; color:#9fe0db; font-family:'Montserrat',sans-serif; font-weight:700; font-size:22px; border-radius:6px; padding:22px 14px; }
+  #give .amt:hover { background:rgba(86,179,177,.18); }
+  #give .amt.sel { background:#56b3b1; color:#264257; border-color:#56b3b1; }
+  #give label { color:#d9e7ea; font-size:13px; font-weight:500; }
+  #give input { border-radius:4px; font-family:'Montserrat',sans-serif; }
+  #give .grid-2, #give .field { max-width:620px; }
+  #give .submit-btn { max-width:620px; background:#56b3b1; color:#264257; font-family:'Montserrat',sans-serif; font-size:14px; font-weight:700; letter-spacing:.08em; border-radius:4px; }
+  #give .submit-btn:hover { background:#9fe0db; }
+  #give .status { color:#e6f1f2; } #give .status.err { color:#ffb4b4; }
+  #give .fine-print { text-align:left; color:#a9c9d0; max-width:620px; } #give .fine-print a { color:#9fe0db; }
+  .close3 { text-align:center; padding:76px 20px 84px; background:#fff; }
+  .close3 h2 { font-weight:800; font-size:clamp(32px,5vw,54px); color:#264257; letter-spacing:-.02em; margin-top:10px; }
+  .close3 p { font-weight:300; font-size:18px; color:#53636f; margin-top:18px; }
+  .notice3 { max-width:1180px; margin:20px auto 0; padding:0 20px; }
+  @media (max-width:900px) { .hero3-in, .who, .signup3-grid { grid-template-columns:1fr; } .hero3-in { padding:40px 24px; } .who { padding:52px 24px; gap:20px; } .grid4 { grid-template-columns:1fr 1fr; } .signup3 img { margin-top:0; } }
+  @media (max-width:560px) { .grid4 { grid-template-columns:1fr; } #give { padding:0 4px; } }
+
+  .foot3 { background:#264257; color:#fff; text-align:center; padding:72px 20px 64px; }
+  .foot3-icons { display:flex; gap:clamp(28px,6vw,72px); justify-content:center; flex-wrap:wrap; margin-bottom:56px; }
+  .foot3-icons a { display:flex; flex-direction:column; align-items:center; gap:10px; text-decoration:none; color:#4fb0b0; font-weight:700; font-size:20px; letter-spacing:.01em; text-transform:uppercase; }
+  .foot3-icons img { height:84px; width:auto; display:block; }
+  .foot3-icons a:hover { color:#9fe0db; }
+  .foot3 h2 { font-weight:700; font-size:clamp(22px,3.4vw,34px); color:#fff; letter-spacing:-.01em; }
+  .foot3-btn { display:inline-block; margin-top:34px; padding:20px 76px; background:#56b3b1; color:#fff; border-radius:12px; font-size:19px; text-decoration:none; transition:background .15s; }
+  .foot3-btn:hover { background:#9fe0db; color:#264257; }
+  .foot3-legal { max-width:1000px; margin:56px auto 0; font-weight:300; font-size:15px; line-height:1.7; color:#e6f1f2; }
+
+  /* donate section: center everything in a single column */
+  #give { text-align:center; }
+  #give .lead { margin:0 auto 28px; }
+  #give .amts, #give .grid-2, #give .field, #give .submit-btn, #give .fine-print, #give .status { max-width:620px; margin-left:auto; margin-right:auto; }
+  #give .field, #give label { text-align:left; }
+  #give .grid-2 { text-align:left; }
+  #give .fine-print { text-align:center; }
+  #give .grid-2 .field { max-width:none; margin-left:0; margin-right:0; }
 </style>
 </head>
 <body>
@@ -164,103 +264,63 @@
   </nav>
 </div></header>
 
-<section class="hero2">
-  <div class="eyebrow">Summit Fastpitch &middot; 2026&ndash;27</div>
-  <h1>Invest in her potential</h1>
-  <p>Help us build the first fastpitch-focused program in Maple Valley. Empower. Develop. Climb.</p>
-  <a class="cta" href="#levels">Become a sponsor &rarr;</a>
-</section>
-
-<section class="sec" id="about">
-  <h2 class="big">Who we are</h2>
-  <p class="lede">Summit Fastpitch is the <b>only fastpitch-focused program in Maple Valley</b>, built to provide structured, long-term development for female athletes. It is run by Summit United, a 501(c)(3) nonprofit. <b>Everyone who coaches and runs Summit Fastpitch is an unpaid volunteer</b>, so your support goes to the athletes.</p>
-</section>
-
-<section class="sec">
-  <h2 class="big">What your support covers</h2>
-  <div class="stats">
-    <div class="stat"><div class="n">18&ndash;20</div><div class="t">Tournament entries</div></div>
-    <div class="stat"><div class="n">3 days</div><div class="t">Facility time</div></div>
-    <div class="stat"><div class="n">2 teams</div><div class="t">Equipment &amp; uniforms</div></div>
-    <div class="stat"><div class="n">Access</div><div class="t">Need-based scholarships</div></div>
+<section class="hero3"><div class="hero3-in">
+  <div>
+    <div class="eb">Summit Fastpitch &middot; 2026&ndash;27</div>
+    <h1>Invest in <span>Her Potential</span></h1>
+    <p>Help us create opportunities for girls to develop, compete, and lead.</p>
+    <a class="btn3" href="#levels">Become a sponsor &rarr;</a>
   </div>
-</section>
+  <img src="/assets/team-huddle.png" alt="Summit Fastpitch players in a huddle with their coach">
+</div></section>
 
-<section class="sec" style="padding-bottom:0"><h2 class="big">Choose your impact</h2></section>
-
-<div class="form-wrap">
-  <div class="dl"><a href="assets/summit-letter.pdf" download>&#8681; Learn more about Summit</a><a href="assets/summit-partnership-opportunities.pdf" download>&#8681; Sponsorship flyer</a></div>
-
-  <div class="tiers" id="levels">
-    <div class="tier peak">
-      <div class="lbl"><div class="badge">Founding level</div><div class="nm">Founding</div><div class="sp">Sponsor</div><div class="pr">$1,500+</div></div>
-      <div class="body"><ul>
-        <li>Everything in Peak</li>
-        <li><b>Premier banner placement</b></li>
-        <li>A <b>signed team photo</b></li>
-        <li><b>Four featured social media posts</b> throughout the season</li>
-      </ul><button class="choose" type="button" data-level="founding">Choose Founding</button></div>
-    </div>
-    <div class="tier trail">
-      <div class="lbl"><div class="nm">Peak</div><div class="sp">Sponsor</div><div class="pr">$1,000</div></div>
-      <div class="body"><ul>
-        <li>Everything in Trailblazer</li>
-        <li>Banner recognition at a Summit event</li>
-        <li>A dedicated Instagram feature</li>
-      </ul><button class="choose" type="button" data-level="peak">Choose Peak</button></div>
-    </div>
-    <div class="tier rise">
-      <div class="lbl"><div class="nm">Trailblazer</div><div class="sp">Sponsor</div><div class="pr">$750</div></div>
-      <div class="body"><ul>
-        <li>Everything in Rise</li>
-        <li>Your logo on a team banner</li>
-        <li>A sponsor-of-the-month social media feature</li>
-      </ul><button class="choose" type="button" data-level="trailblazer">Choose Trailblazer</button></div>
-    </div>
-    <div class="tier small">
-      <div class="lbl"><div class="nm">Rise</div><div class="sp">Sponsor</div><div class="pr">$250</div></div>
-      <div class="body"><ul>
-        <li>Logo on our website sponsor page</li>
-        <li>An Instagram thank-you post</li>
-      </ul><button class="choose" type="button" data-level="rise">Choose Rise</button></div>
-    </div>
-    <div class="tier small">
-      <div class="lbl"><div class="nm">In-Kind</div><div class="sp">Sponsor</div><div class="pr">Give what you do best</div></div>
-      <div class="body"><ul>
-        <li>Equipment, facilities, professional services, supplies, or other resources</li>
-      </ul><button class="choose" type="button" data-level="inkind">Partner with us</button></div>
-    </div>
-  </div>
-
-  <div id="give" class="card give">
-    <h2 class="section-title">Just want to give?</h2>
-    <p class="lead">Every gift helps keep girls' fastpitch softball affordable and open to more players. A donation is a straight gift to Summit United, with no recognition or perks in return.</p>
-    <div class="amts" id="give-amts">
-      <button class="amt" type="button" data-amt="25">$25</button>
-      <button class="amt" type="button" data-amt="50">$50</button>
-      <button class="amt" type="button" data-amt="100">$100</button>
-      <button class="amt" type="button" data-amt="250">$250</button>
-    </div>
-    <div class="field"><label for="give-amount">Or enter an amount ($5 minimum) *</label><input id="give-amount" required aria-required="true" type="number" min="5" step="1" inputmode="numeric" placeholder="25"></div>
-    <div class="grid-2">
-      <div class="field"><label for="give-name">Your name *</label><input id="give-name" required aria-required="true" type="text" autocomplete="name"></div>
-      <div class="field"><label for="give-email">Email for your receipt *</label><input id="give-email" required aria-required="true" type="email" autocomplete="email"></div>
-    </div>
-    <button class="submit-btn" id="give-btn" type="button">Donate</button>
-    <div class="status" id="give-status" role="status" aria-live="polite"></div>
-    <p class="fine-print">You'll finish on Stripe's secure checkout, by card or bank transfer. No fees are added to your gift.</p>
-  </div>
-
+<div class="notice3">
   <div id="cancelled-banner" class="status-banner">Checkout was cancelled &mdash; no payment was made. You can try again below.</div>
   <div id="confirmation-view" class="card confirmation-card" style="display:none;">
     <div class="confirmation-icon">&#10003;</div>
     <h2 class="confirmation-title">Thank you!</h2>
     <p class="confirmation-message">Your payment was submitted. You'll get an email receipt from Stripe. If you chose a sponsorship level, we'll be in touch about your recognition. Bank transfers can take a few business days to clear.</p>
   </div>
+</div>
 
-  <div id="signup">
-    <form id="sponsor-form" class="card" novalidate>
-      <h2 class="section-title">Become a sponsor</h2>
+<section class="who" id="about">
+  <div><div class="eyebrow2">Our Program</div><h2 class="h2b">Who We Are</h2></div>
+  <p>Summit Fastpitch is the girls' softball program of Summit United, a 501(c)(3) nonprofit, serving athletes in the Maple Valley area through our 12U and 14U teams. We focus on intentional coaching, individual development, and competitive opportunities that help young women grow on and off the field. <b>Everyone who coaches and runs Summit is an unpaid volunteer</b>, so your support goes to the athletes.</p>
+</section>
+
+<section class="band-gray"><div class="wrap3 center">
+  <div class="eyebrow2">Your Investment at Work</div>
+  <h2 class="h2b">What Your Support Covers</h2>
+  <div class="grid4">
+    <div class="sc"><div class="n">18&ndash;20</div><h3>Tournament Entries</h3><p>Entry fees for 18&ndash;20 tournament appearances across our two teams.</p></div>
+    <div class="sc"><div class="n">3 Days</div><h3>Facility Time</h3><p>Practice facilities for three training days each week.</p></div>
+    <div class="sc"><div class="n">2 Teams</div><h3>Equipment &amp; Uniforms</h3><p>Team equipment, training resources, and player uniform kits.</p></div>
+    <div class="sc"><div class="n">Access</div><h3>Need-Based Scholarships</h3><p>Financial assistance to help make the program accessible to more athletes.</p></div>
+  </div>
+</div></section>
+
+<section class="band-light" id="levels"><div class="wrap3 center">
+  <div class="eyebrow2">2026&ndash;27 Sponsorship Opportunities</div>
+  <h2 class="h2b">Choose Your Impact</h2>
+  <p class="sub3">Every sponsorship helps create opportunities for girls to grow.</p>
+  <div class="grid4">
+    <div class="tc"><div class="nm3">Rise</div><div class="pr3">$250</div><p>Logo on our website sponsor page and an Instagram thank-you post.</p><button class="go" type="button" data-level="rise">Choose Rise &rarr;</button></div>
+    <div class="tc"><div class="nm3">Trailblazer</div><div class="pr3">$750</div><p><b>Everything in Rise,</b> plus your logo on a team banner and a sponsor-of-the-month social media feature.</p><button class="go" type="button" data-level="trailblazer">Choose Trailblazer &rarr;</button></div>
+    <div class="tc"><div class="nm3">Peak</div><div class="pr3">$1,000</div><p><b>Everything in Trailblazer,</b> plus banner recognition at a Summit event and a dedicated Instagram feature.</p><button class="go" type="button" data-level="peak">Choose Peak &rarr;</button></div>
+    <div class="tc dark"><div class="nm3">Founding Sponsor</div><div class="pr3">$1,500+</div><p><b>Everything in Peak,</b> plus premier banner placement, a signed team photo, and four featured social media posts throughout the season.</p><button class="go" type="button" data-level="founding">Become a Founding Sponsor &rarr;</button></div>
+  </div>
+  <div class="inkind">
+    <div><div class="eyebrow2" style="margin:0">In-Kind Sponsor</div><h3>Give What You Do Best</h3><p>Equipment, facilities, professional services, supplies, or other resources.</p></div>
+    <button class="go" type="button" data-level="inkind">Partner with us &rarr;</button>
+  </div>
+  <div class="dl3"><a href="assets/summit-letter.pdf" download>&#8681; Learn more about Summit</a><a href="assets/summit-partnership-opportunities.pdf" download>&#8681; Sponsorship flyer</a></div>
+</div></section>
+
+<section class="signup3">
+  <h2>Become a Sponsor</h2>
+  <div class="signup3-grid">
+    <div id="signup">
+    <form id="sponsor-form" novalidate>
       <div class="grid-2">
         <div class="field"><label for="org">Business or organization</label><input id="org" name="org" type="text" autocomplete="organization"></div>
         <div class="field"><label for="contact">Contact name</label><input id="contact" name="contact" type="text" autocomplete="name"></div>
@@ -281,23 +341,51 @@
       <div class="status" id="status" role="status" aria-live="polite"></div>
       <p class="fine-print">Questions? Email <a href="mailto:info@playsummit.org">info@playsummit.org</a></p>
     </form>
-    <div id="thanks" class="card" style="display:none" tabindex="-1">
+    <div id="thanks" class="card thanks-card" style="display:none" tabindex="-1">
       <h2 class="section-title">Thank you!</h2>
       <p id="thanks-msg" class="confirmation-message" style="margin:0;max-width:none"></p>
       <div id="thanks-pay"></div>
     </div>
   </div>
-</div>
-
-<section class="band-close">
-  <h2>Join the Summit community</h2>
-  <p>Help her reach new heights.</p>
-  <a class="cta" href="#levels">Become a sponsor &rarr;</a>
+    <img src="/assets/catcher.png" alt="A Summit Fastpitch catcher signaling from behind the plate">
+  </div>
 </section>
-<footer class="site-foot">
-  <nav aria-label="Footer"><a href="https://www.playsummit.org/program">Program</a><a href="https://www.playsummit.org/about">Coaches</a><a href="https://www.playsummit.org/contact">Contact</a></nav>
-  <div>Want to learn more? We'd love to connect: <a class="m" href="mailto:info@playsummit.org">info@playsummit.org</a></div>
-  <div style="margin-top:10px;font-size:12px;line-height:1.6">&copy; 2026 Summit United. Summit United is a 501(c)(3) nonprofit (EIN 41-489-3932). Contributions may be tax-deductible to the extent allowed by law.</div>
+
+<section class="give-sec">
+  <div id="give" class="give">
+    <div class="eyebrow2">Support Summit Fastpitch</div>
+    <h2 class="h2w">Just Want to Give?</h2>
+    <p class="lead">Every gift helps create opportunities for girls to develop, compete, and grow. A donation is a straight gift to Summit United. No sponsorship recognition required.</p>
+    <div class="amts" id="give-amts">
+      <button class="amt" type="button" data-amt="25">$25</button>
+      <button class="amt" type="button" data-amt="50">$50</button>
+      <button class="amt" type="button" data-amt="100">$100</button>
+    </div>
+    <div class="field"><label for="give-amount">Or enter an amount ($5 minimum) *</label><input id="give-amount" required aria-required="true" type="number" min="5" step="1" inputmode="numeric" placeholder="25"></div>
+    <div class="grid-2">
+      <div class="field"><label for="give-name">Your name *</label><input id="give-name" required aria-required="true" type="text" autocomplete="name"></div>
+      <div class="field"><label for="give-email">Email for your receipt *</label><input id="give-email" required aria-required="true" type="email" autocomplete="email"></div>
+    </div>
+    <button class="submit-btn" id="give-btn" type="button">Donate &rarr;</button>
+    <div class="status" id="give-status" role="status" aria-live="polite"></div>
+    <p class="fine-print">You'll finish on Stripe's secure checkout, by card or bank transfer. No fees are added to your gift.</p>
+  </div>
+</section>
+
+<section class="close3">
+  <div class="eyebrow2">Join the Summit Community</div>
+  <h2>Help Her Reach New Heights.</h2>
+  <p>Thank you for investing in female athletes and helping us build something lasting.</p>
+</section>
+<footer class="foot3">
+  <nav class="foot3-icons" aria-label="Footer">
+    <a href="https://www.playsummit.org/program"><img src="/assets/icon-program.png" alt=""><span>Program</span></a>
+    <a href="https://www.playsummit.org/about"><img src="/assets/icon-coaches.png" alt=""><span>Coaches</span></a>
+    <a href="https://www.playsummit.org/contact"><img src="/assets/icon-contact.png" alt=""><span>Contact</span></a>
+  </nav>
+  <h2>Want to learn more? We&rsquo;d love to connect with you!</h2>
+  <a class="foot3-btn" href="https://www.playsummit.org/contact">Learn more</a>
+  <p class="foot3-legal">Copyright &copy; 2026. Summit Fastpitch. All Rights Reserved. Summit Fastpitch is a program of Summit United, a recognized 501(c)(3) nonprofit organization. EIN: 41-489-3932. Contributions may be tax-deductible to the extent permitted by law.</p>
 </footer>
 
 <script>
@@ -426,7 +514,7 @@ giveBtn.addEventListener("click", async () => {
 
 const q = new URLSearchParams(window.location.search).get("status");
 if (q === "cancelled") $("cancelled-banner").style.display = "block";
-if (q === "success") { $("signup").style.display = "none"; $("levels").style.display = "none"; $("give").style.display = "none"; document.querySelector(".dl").style.display = "none"; $("confirmation-view").style.display = "block"; }
+if (q === "success") { document.querySelectorAll(".signup3, #levels, .give-sec").forEach((el) => { el.style.display = "none"; }); $("confirmation-view").style.display = "block"; $("confirmation-view").scrollIntoView(); }
 </script>
 </body>
 </html>
