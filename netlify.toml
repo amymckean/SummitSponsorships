@@ -1,0 +1,17 @@
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Old link style from the flyers and QR codes
+[[redirects]]
+  from = "/summitsponsor"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/summitsponsor.html"
+  to = "/"
+  status = 301

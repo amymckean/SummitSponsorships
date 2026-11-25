@@ -1,0 +1,9 @@
+{
+  "name": "summit-fastpitch-sponsorship-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "stripe": "^22.4.0"
+  }
+}

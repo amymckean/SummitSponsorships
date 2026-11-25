@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partnership Opportunities — Summit Fastpitch</title>
+<meta name="description" content="Become a Summit Fastpitch sponsor and help build the first fastpitch-focused program in Maple Valley.">
+<link rel="icon" href="/assets/summit-favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/assets/summit-favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/summit-apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy:#1d4358; --deep:#022e4b; --band:#00394c; --teal:#0b7784; --bright:#0fafaf; --pale:#ebf7f7; --line:#d3e6e8; --soft:#4f6672; --white:#fff; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--white); font-family:'Inter',sans-serif; color:var(--navy); min-height:100vh; }
+  h1,h2,.cond { font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; }
+
+  /* Header, like the flyer: logo + big headline, teal swoosh underneath */
+  .hero { position:relative; background:var(--white); padding:34px 20px 64px; overflow:hidden; }
+  .hero::after { content:''; position:absolute; left:-5%; right:-5%; bottom:-34px; height:64px; background:var(--teal); transform:rotate(-1.6deg); transform-origin:left bottom; }
+  .hero-inner { max-width:880px; margin:0 auto; display:flex; align-items:center; gap:28px; flex-wrap:wrap; }
+  .brand-logo { height:84px; width:auto; display:block; }
+  .hero-copy { flex:1 1 320px; border-left:2px solid var(--line); padding-left:28px; }
+  .hero-title { font-size:clamp(32px,6vw,52px); font-weight:800; line-height:1.02; color:var(--navy); letter-spacing:.2px; }
+  .hero-sub { margin-top:8px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:clamp(15px,2.4vw,19px); letter-spacing:.06em; text-transform:uppercase; color:var(--teal); }
+  .hero-tag { margin-top:6px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:15px; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); }
+  @media (max-width:560px){ .hero-copy{ border-left:0; padding-left:0; } }
+
+  .form-wrap { max-width:760px; margin:0 auto; padding:44px 20px 60px; }
+  .intro { font-size:15.5px; line-height:1.65; color:var(--soft); margin-bottom:26px; }
+  .intro b { color:var(--teal); }
+
+  .points { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-bottom:26px; }
+  .point { display:flex; gap:12px; align-items:flex-start; background:var(--pale); border-radius:12px; padding:16px; }
+  .ico { flex:none; width:40px; height:40px; border-radius:50%; background:var(--teal); display:flex; align-items:center; justify-content:center; }
+  .ico svg { width:22px; height:22px; fill:none; stroke:#fff; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .point b { display:block; font-family:'Barlow Condensed',sans-serif; font-size:17px; text-transform:uppercase; letter-spacing:.03em; color:var(--teal); }
+  .point span { font-size:13.5px; color:var(--soft); line-height:1.45; }
+
+  .card { background:var(--pale); border:1px solid var(--line); border-radius:14px; padding:28px 30px; margin-bottom:18px; }
+  .section-title { font-size:26px; font-weight:800; color:var(--navy); margin-bottom:16px; }
+  .section-title::after { content:''; display:block; width:54px; height:3px; margin-top:6px; background:var(--bright); border-radius:2px; }
+  .amts { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+  .amt { flex:1 1 80px; padding:14px; background:var(--white); border:2px solid var(--line); border-radius:10px; font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:800; color:var(--navy); cursor:pointer; transition:all .15s; }
+  .amt:hover { border-color:var(--bright); }
+  .amt.sel { background:var(--teal); border-color:var(--teal); color:#fff; }
+  .field { display:flex; flex-direction:column; gap:7px; margin-bottom:16px; }
+  .field:last-child { margin-bottom:0; }
+  .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:560px) { .grid-2 { grid-template-columns:1fr; } .card { padding:22px 18px; } }
+  label { font-size:12px; font-weight:600; letter-spacing:.3px; color:var(--soft); }
+  input { background:var(--white); border:1px solid var(--line); border-radius:8px; padding:12px 14px; font-family:'Inter',sans-serif; font-size:15px; color:var(--navy); width:100%; outline:none; transition:border-color .15s, box-shadow .15s; }
+  input:focus { border-color:var(--teal); box-shadow:0 0 0 3px rgba(15,175,175,0.18); }
+  .submit-btn { display:block; width:100%; padding:16px; margin-top:6px; background:var(--teal); color:#fff; font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; font-size:22px; font-weight:800; letter-spacing:.08em; border:none; border-radius:10px; cursor:pointer; transition:background .15s; }
+  .submit-btn:hover { background:var(--navy); }
+  .submit-btn:disabled { opacity:.5; cursor:not-allowed; }
+  .fine-print { text-align:center; font-size:12px; color:var(--soft); margin-top:14px; line-height:1.6; }
+  .fine-print a { color:var(--teal); }
+  .form-error { display:none; background:#fdf1f1; border:1px solid #f0c6c6; border-left:3px solid #c94f4f; color:#9a3c3c; padding:12px 16px; border-radius:6px; font-size:13.5px; margin-bottom:18px; }
+  .status-banner { display:none; text-align:center; padding:16px 20px; border-radius:10px; margin-bottom:24px; font-size:14px; font-weight:600; background:#fdf6e3; border:1px solid #ecdca3; color:#8a6d1a; }
+  .confirmation-card { text-align:center; padding:44px 32px; }
+  .confirmation-icon { width:56px; height:56px; border-radius:50%; background:var(--teal); color:#fff; display:flex; align-items:center; justify-content:center; font-size:26px; font-weight:800; margin:0 auto 18px; }
+  .confirmation-title { font-size:32px; font-weight:800; margin-bottom:10px; }
+  .confirmation-message { font-size:14.5px; color:var(--soft); line-height:1.65; max-width:440px; margin:0 auto; }
+
+  /* Footer, like the flyer: mountains, dark band with script thank-you, teal contact bar */
+  .mtn { display:block; width:100%; height:auto; margin-bottom:-1px; }
+  .thanks { background:var(--deep); color:#fff; text-align:center; padding:26px 20px 30px; }
+  .thanks .script { font-family:'Caveat',cursive; font-size:44px; line-height:1; color:#7fd3d6; transform:rotate(-4deg); display:inline-block; margin-bottom:8px; }
+  .thanks .l1 { font-weight:700; letter-spacing:.06em; font-size:14px; text-transform:uppercase; }
+  .thanks .l2 { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:clamp(24px,5vw,34px); letter-spacing:.08em; color:#7fd3d6; text-transform:uppercase; }
+  .thanks .l2 u { text-decoration-color:var(--bright); text-decoration-thickness:3px; text-underline-offset:5px; }
+  .contact { background:var(--teal); color:#fff; text-align:center; padding:18px 20px; font-size:14px; line-height:1.55; }
+  .contact a { color:#fff; font-weight:700; }
+  .contact .t { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:16px; letter-spacing:.06em; text-transform:uppercase; }
+  .nonprofit { background:var(--band); color:#a9c9d0; text-align:center; padding:14px 20px 18px; font-size:12px; line-height:1.6; }
+  .nonprofit .eb { color:#fff; font-weight:700; letter-spacing:.14em; }
+
+  .hero-title { font-size:clamp(32px,6vw,52px); }
+  .tiers { display:flex; flex-direction:column; gap:14px; margin-bottom:26px; }
+  .tier { display:flex; border-radius:14px; overflow:hidden; border:1px solid var(--line); background:var(--pale); }
+  .tier .lbl { flex:none; width:190px; padding:20px 16px; text-align:center; color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:2px; }
+  .tier .lbl .nm { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:30px; text-transform:uppercase; line-height:1; }
+  .tier .lbl .sp { font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; opacity:.9; }
+  .tier .lbl .pr { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:24px; }
+  .tier .body { flex:1; padding:18px 22px; display:flex; flex-direction:column; justify-content:center; gap:10px; }
+  .tier ul { list-style:none; }
+  .tier li { position:relative; padding-left:26px; margin:4px 0; font-size:14.5px; }
+  .tier li::before { content:'\2713'; position:absolute; left:0; top:0; width:18px; height:18px; border-radius:50%; background:var(--teal); color:#fff; font-size:11px; font-weight:800; display:flex; align-items:center; justify-content:center; }
+  .tier .choose { align-self:flex-start; padding:9px 18px; background:transparent; color:var(--teal); border:2px solid var(--teal); border-radius:8px; font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:16px; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; transition:all .15s; }
+  .tier .choose:hover { background:var(--teal); color:#fff; }
+  .tier.peak { border:2px solid #f0a050; } .tier.peak .lbl { background:#0a2047; } .tier.peak .pr { color:#f2c14e; } .tier.peak .sp { color:#7fd3d6; }
+  .badge { background:#f2c14e; color:#0a2047; font-size:10px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; padding:2px 8px; border-radius:3px; margin-bottom:6px; }
+  .tier.trail .lbl { background:#1f4256; } .tier.trail .sp, .tier.trail .pr { color:#7fd3d6; }
+  .tier.rise .lbl { background:#0fafaf; }
+  .tier.small .lbl { background:#a7d8da; color:var(--navy); }
+  .pair { display:flex; gap:14px; flex-wrap:wrap; } .pair .tier { flex:1 1 300px; flex-direction:column; }
+  .pair .tier .lbl { width:auto; padding:14px; }
+  select, textarea { background:var(--white); border:1px solid var(--line); border-radius:8px; padding:12px 14px; font-family:'Inter',sans-serif; font-size:15px; color:var(--navy); width:100%; outline:none; }
+  select:focus, textarea:focus { border-color:var(--teal); box-shadow:0 0 0 3px rgba(15,175,175,0.18); }
+  textarea { min-height:90px; resize:vertical; }
+  .hp { position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
+  .pay-box { margin-top:20px; padding-top:18px; border-top:1px solid var(--line); }
+  .pay-box .btn { margin-top:14px; }
+  .status { margin-top:12px; min-height:1.3em; font-size:14px; color:var(--soft); } .status.err { color:#9a3c3c; }
+  .dl { display:flex; gap:12px; flex-wrap:wrap; margin:-6px 0 22px; } .dl a { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:16px; letter-spacing:.08em; text-transform:uppercase; color:var(--teal); text-decoration:none; border:2px solid var(--teal); border-radius:8px; padding:8px 16px; } .dl a:hover { background:var(--teal); color:#fff; }
+  .give { margin:0 0 26px; }
+  .give .amts { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+  .give .amt { flex:1 1 80px; padding:14px; background:var(--white); border:2px solid var(--line); border-radius:10px; font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:800; color:var(--navy); cursor:pointer; transition:all .15s; }
+  .give .amt:hover { border-color:var(--bright); }
+  .give .amt.sel { background:var(--teal); border-color:var(--teal); color:#fff; }
+  .give p.lead { font-size:14.5px; color:var(--soft); line-height:1.6; margin:-6px 0 16px; }
+  .alt { text-align:center; font-size:14px; color:var(--soft); margin:6px 0 26px; } .alt a { color:var(--teal); font-weight:600; }
+  @media (max-width:640px) { .tier { flex-direction:column; } .tier .lbl { width:auto; padding:14px; } }
+
+  /* Site header + hero, modeled on playsummit.org/sponsor */
+  .site-head { position:sticky; top:0; z-index:20; background:#fff; border-bottom:1px solid var(--line); }
+  .site-head-in { max-width:1080px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
+  .site-head .brand-logo { height:46px; }
+  .site-nav { margin-left:auto; display:flex; gap:4px 22px; flex-wrap:wrap; align-items:center; }
+  .site-nav a { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:16px; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); text-decoration:none; padding:6px 0; border-bottom:2px solid transparent; }
+  .site-nav a:hover, .site-nav a.on { color:var(--teal); border-bottom-color:var(--teal); }
+  .hero2 { background:linear-gradient(135deg,var(--deep) 0%,var(--navy) 60%,var(--teal) 130%); color:#fff; text-align:center; padding:84px 20px 96px; position:relative; overflow:hidden; }
+  .hero2 .eyebrow { font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:.22em; text-transform:uppercase; font-size:15px; color:#7fd3d6; margin-bottom:14px; }
+  .hero2 h1 { font-size:clamp(44px,9vw,92px); font-weight:800; line-height:.98; letter-spacing:.01em; color:#fff; }
+  .hero2 p { max-width:620px; margin:18px auto 0; font-size:17px; line-height:1.6; color:#d6ebee; }
+  .cta { display:inline-block; margin-top:30px; padding:15px 32px; background:#fff; color:var(--navy); border-radius:10px; font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:20px; letter-spacing:.1em; text-transform:uppercase; text-decoration:none; transition:all .15s; }
+  .cta:hover { background:var(--bright); color:#fff; }
+  .sec { max-width:1000px; margin:0 auto; padding:60px 20px 0; }
+  .sec h2.big { font-size:clamp(30px,5vw,44px); font-weight:800; color:var(--navy); margin-bottom:14px; }
+  .sec h2.big::after { content:''; display:block; width:60px; height:4px; margin-top:8px; background:var(--bright); border-radius:2px; }
+  .sec p.lede { font-size:17px; line-height:1.7; color:var(--soft); max-width:760px; }
+  .sec p.lede b { color:var(--teal); }
+  .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; margin-top:26px; }
+  .stat { background:var(--pale); border:1px solid var(--line); border-top:4px solid var(--teal); border-radius:12px; padding:24px 20px; text-align:center; }
+  .stat .n { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:44px; line-height:1; color:var(--teal); }
+  .stat .t { margin-top:8px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:17px; letter-spacing:.06em; text-transform:uppercase; color:var(--navy); }
+  .band-close { background:var(--navy); color:#fff; text-align:center; padding:52px 20px; margin-top:20px; }
+  .band-close h2 { font-size:clamp(28px,5vw,42px); font-weight:800; color:#fff; }
+  .band-close p { margin-top:8px; color:#a9c9d0; font-size:16px; }
+  .band-close .cta { margin-top:20px; background:var(--bright); color:#fff; }
+  .band-close .cta:hover { background:#fff; color:var(--navy); }
+  .site-foot { background:var(--deep); color:#a9c9d0; text-align:center; padding:26px 20px; font-size:14px; }
+  .site-foot nav { display:flex; gap:6px 24px; justify-content:center; flex-wrap:wrap; margin-bottom:12px; }
+  .site-foot nav a { font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#fff; text-decoration:none; font-size:15px; }
+  .site-foot nav a:hover { color:#7fd3d6; }
+  .site-foot a.m { color:#7fd3d6; }
+  .form-wrap { max-width:1000px; padding-top:34px; }
+  @media (max-width:640px) { .site-nav { margin-left:0; } .hero2 { padding:60px 20px 70px; } }
+</style>
+</head>
+<body>
+
+<header class="site-head"><div class="site-head-in">
+  <a href="https://www.playsummit.org/"><img class="brand-logo" src="/assets/summit-logo.png" alt="Summit Fastpitch"></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="https://www.playsummit.org/">Home</a>
+    <a href="https://www.playsummit.org/program">Program</a>
+    <a href="https://www.playsummit.org/about">About</a>
+    <a href="https://www.playsummit.org/teams">Teams</a>
+    <a href="/" class="on">Sponsor</a>
+    <a href="https://www.playsummit.org/contact">Contact</a>
+  </nav>
+</div></header>
+
+<section class="hero2">
+  <div class="eyebrow">Summit Fastpitch &middot; 2026&ndash;27</div>
+  <h1>Invest in her potential</h1>
+  <p>Help us build the first fastpitch-focused program in Maple Valley. Empower. Develop. Climb.</p>
+  <a class="cta" href="#levels">Become a sponsor &rarr;</a>
+</section>
+
+<section class="sec" id="about">
+  <h2 class="big">Who we are</h2>
+  <p class="lede">Summit Fastpitch is the <b>only fastpitch-focused program in Maple Valley</b>, built to provide structured, long-term development for female athletes. It is run by Summit United, a 501(c)(3) nonprofit. <b>Everyone who coaches and runs Summit Fastpitch is an unpaid volunteer</b>, so your support goes to the athletes.</p>
+</section>
+
+<section class="sec">
+  <h2 class="big">What your support covers</h2>
+  <div class="stats">
+    <div class="stat"><div class="n">18&ndash;20</div><div class="t">Tournament entries</div></div>
+    <div class="stat"><div class="n">3 days</div><div class="t">Facility time</div></div>
+    <div class="stat"><div class="n">2 teams</div><div class="t">Equipment &amp; uniforms</div></div>
+    <div class="stat"><div class="n">Access</div><div class="t">Need-based scholarships</div></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-bottom:0"><h2 class="big">Choose your impact</h2></section>
+
+<div class="form-wrap">
+  <div class="dl"><a href="assets/summit-letter.pdf" download>&#8681; Learn more about Summit</a><a href="assets/summit-partnership-opportunities.pdf" download>&#8681; Sponsorship flyer</a></div>
+
+  <div class="tiers" id="levels">
+    <div class="tier peak">
+      <div class="lbl"><div class="badge">Founding level</div><div class="nm">Founding</div><div class="sp">Sponsor</div><div class="pr">$1,500+</div></div>
+      <div class="body"><ul>
+        <li>Everything in Peak</li>
+        <li><b>Premier banner placement</b></li>
+        <li>A <b>signed team photo</b></li>
+        <li><b>Four featured social media posts</b> throughout the season</li>
+      </ul><button class="choose" type="button" data-level="founding">Choose Founding</button></div>
+    </div>
+    <div class="tier trail">
+      <div class="lbl"><div class="nm">Peak</div><div class="sp">Sponsor</div><div class="pr">$1,000</div></div>
+      <div class="body"><ul>
+        <li>Everything in Trailblazer</li>
+        <li>Banner recognition at a Summit event</li>
+        <li>A dedicated Instagram feature</li>
+      </ul><button class="choose" type="button" data-level="peak">Choose Peak</button></div>
+    </div>
+    <div class="tier rise">
+      <div class="lbl"><div class="nm">Trailblazer</div><div class="sp">Sponsor</div><div class="pr">$750</div></div>
+      <div class="body"><ul>
+        <li>Everything in Rise</li>
+        <li>Your logo on a team banner</li>
+        <li>A sponsor-of-the-month social media feature</li>
+      </ul><button class="choose" type="button" data-level="trailblazer">Choose Trailblazer</button></div>
+    </div>
+    <div class="tier small">
+      <div class="lbl"><div class="nm">Rise</div><div class="sp">Sponsor</div><div class="pr">$250</div></div>
+      <div class="body"><ul>
+        <li>Logo on our website sponsor page</li>
+        <li>An Instagram thank-you post</li>
+      </ul><button class="choose" type="button" data-level="rise">Choose Rise</button></div>
+    </div>
+    <div class="tier small">
+      <div class="lbl"><div class="nm">In-Kind</div><div class="sp">Sponsor</div><div class="pr">Give what you do best</div></div>
+      <div class="body"><ul>
+        <li>Equipment, facilities, professional services, supplies, or other resources</li>
+      </ul><button class="choose" type="button" data-level="inkind">Partner with us</button></div>
+    </div>
+  </div>
+
+  <div id="give" class="card give">
+    <h2 class="section-title">Just want to give?</h2>
+    <p class="lead">Every gift helps keep girls' fastpitch softball affordable and open to more players. A donation is a straight gift to Summit United, with no recognition or perks in return.</p>
+    <div class="amts" id="give-amts">
+      <button class="amt" type="button" data-amt="25">$25</button>
+      <button class="amt" type="button" data-amt="50">$50</button>
+      <button class="amt" type="button" data-amt="100">$100</button>
+      <button class="amt" type="button" data-amt="250">$250</button>
+    </div>
+    <div class="field"><label for="give-amount">Or enter an amount ($5 minimum) *</label><input id="give-amount" required aria-required="true" type="number" min="5" step="1" inputmode="numeric" placeholder="25"></div>
+    <div class="grid-2">
+      <div class="field"><label for="give-name">Your name *</label><input id="give-name" required aria-required="true" type="text" autocomplete="name"></div>
+      <div class="field"><label for="give-email">Email for your receipt *</label><input id="give-email" required aria-required="true" type="email" autocomplete="email"></div>
+    </div>
+    <button class="submit-btn" id="give-btn" type="button">Donate</button>
+    <div class="status" id="give-status" role="status" aria-live="polite"></div>
+    <p class="fine-print">You'll finish on Stripe's secure checkout, by card or bank transfer. No fees are added to your gift.</p>
+  </div>
+
+  <div id="cancelled-banner" class="status-banner">Checkout was cancelled &mdash; no payment was made. You can try again below.</div>
+  <div id="confirmation-view" class="card confirmation-card" style="display:none;">
+    <div class="confirmation-icon">&#10003;</div>
+    <h2 class="confirmation-title">Thank you!</h2>
+    <p class="confirmation-message">Your payment was submitted. You'll get an email receipt from Stripe. If you chose a sponsorship level, we'll be in touch about your recognition. Bank transfers can take a few business days to clear.</p>
+  </div>
+
+  <div id="signup">
+    <form id="sponsor-form" class="card" novalidate>
+      <h2 class="section-title">Become a sponsor</h2>
+      <div class="grid-2">
+        <div class="field"><label for="org">Business or organization</label><input id="org" name="org" type="text" autocomplete="organization"></div>
+        <div class="field"><label for="contact">Contact name</label><input id="contact" name="contact" type="text" autocomplete="name"></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+        <div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="level">Sponsorship level</label>
+        <select id="level" name="level"><option value="">Select a level</option>
+          <option value="founding">Founding Sponsor &ndash; $1,500+</option>
+          <option value="peak">Peak &ndash; $1,000</option>
+          <option value="trailblazer">Trailblazer &ndash; $750</option>
+          <option value="rise">Rise &ndash; $250</option>
+          <option value="inkind">In-Kind (equipment, services, supplies)</option>
+        </select></div>
+      <div class="field"><label for="notes">Anything we should know? (optional)</label><textarea id="notes" name="notes"></textarea></div>
+      <div class="hp" aria-hidden="true"><label>Leave this empty<input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+      <button class="submit-btn" id="submit-btn" type="submit">Submit sponsorship</button>
+      <div class="status" id="status" role="status" aria-live="polite"></div>
+      <p class="fine-print">Questions? Email <a href="mailto:info@playsummit.org">info@playsummit.org</a></p>
+    </form>
+    <div id="thanks" class="card" style="display:none" tabindex="-1">
+      <h2 class="section-title">Thank you!</h2>
+      <p id="thanks-msg" class="confirmation-message" style="margin:0;max-width:none"></p>
+      <div id="thanks-pay"></div>
+    </div>
+  </div>
+</div>
+
+<section class="band-close">
+  <h2>Join the Summit community</h2>
+  <p>Help her reach new heights.</p>
+  <a class="cta" href="#levels">Become a sponsor &rarr;</a>
+</section>
+<footer class="site-foot">
+  <nav aria-label="Footer"><a href="https://www.playsummit.org/program">Program</a><a href="https://www.playsummit.org/about">Coaches</a><a href="https://www.playsummit.org/contact">Contact</a></nav>
+  <div>Want to learn more? We'd love to connect: <a class="m" href="mailto:info@playsummit.org">info@playsummit.org</a></div>
+  <div style="margin-top:10px;font-size:12px;line-height:1.6">&copy; 2026 Summit United. Summit United is a 501(c)(3) nonprofit (EIN 41-489-3932). Contributions may be tax-deductible to the extent allowed by law.</div>
+</footer>
+
+<script>
+const CONFIG = {
+  formEndpoint: "https://script.google.com/macros/s/AKfycbwVbw6FE5iZhcUlyYeKv5ysn0xK7FqQPJWMmgiGua3rm9bvDjEzeycrEPBc_tz7XDyc/exec",                            // Apps Script web app URL (Code.gs). Empty = open an email draft instead
+  checkoutEndpoint: "/api/create-sponsorship",
+  fallbackEmail: "info@playsummit.org"
+};
+const LEVELS = {
+  founding: { name: "Founding Sponsor ($1,500+)", min: 1500 },
+  peak: { name: "Peak ($1,000)", fixed: 1000 },
+  trailblazer: { name: "Trailblazer ($750)", fixed: 750 },
+  rise: { name: "Rise ($250)", fixed: 250 },
+  inkind: { name: "In-Kind", inkind: true }
+};
+const $ = (id) => document.getElementById(id);
+const fmt = (n) => "$" + n.toLocaleString("en-US");
+
+document.querySelectorAll("[data-level]").forEach((b) => b.addEventListener("click", () => {
+  $("level").value = b.dataset.level;
+  $("signup").scrollIntoView({ behavior: "smooth" });
+  setTimeout(() => $("org").focus({ preventScroll: true }), 500);
+}));
+
+const form = $("sponsor-form"), statusEl = $("status"), submitBtn = $("submit-btn");
+
+function buildPayBox(data) {
+  const pay = $("thanks-pay"); pay.textContent = "";
+  const lv = LEVELS[data.level]; if (!lv || lv.inkind || !CONFIG.checkoutEndpoint) return;
+  const box = document.createElement("div"); box.className = "pay-box";
+  const p = document.createElement("p"); p.className = "confirmation-message"; p.style.maxWidth = "none";
+  p.textContent = "Prefer to pay now? Pay by card or bank transfer. There's no card surcharge on sponsorships.";
+  box.appendChild(p);
+  let amt = null;
+  if (lv.min) {
+    const w = document.createElement("div"); w.className = "field"; w.style.maxWidth = "240px"; w.style.marginTop = "14px";
+    const l = document.createElement("label"); l.htmlFor = "pay-amount"; l.textContent = "Amount (minimum " + fmt(lv.min) + ")";
+    amt = document.createElement("input"); amt.id = "pay-amount"; amt.type = "number"; amt.min = String(lv.min); amt.step = "1"; amt.value = String(lv.min);
+    w.append(l, amt); box.appendChild(w);
+  }
+  const label = lv.fixed ? "Pay " + fmt(lv.fixed) + " now" : "Pay now";
+  const btn = document.createElement("button"); btn.type = "button"; btn.className = "submit-btn btn"; btn.style.maxWidth = "280px"; btn.textContent = label;
+  const msg = document.createElement("div"); msg.className = "status"; msg.setAttribute("role", "status"); msg.setAttribute("aria-live", "polite");
+  btn.addEventListener("click", async () => {
+    msg.className = "status"; msg.textContent = "";
+    const payload = { org: "summit", tier: data.level, business: data.org, name: data.contact, email: data.email };
+    if (amt) {
+      const n = Number(amt.value);
+      if (!Number.isFinite(n) || n < lv.min) { msg.className = "status err"; msg.textContent = "This level starts at " + fmt(lv.min) + "."; return; }
+      payload.amount = n;
+    }
+    btn.disabled = true; btn.textContent = "Opening checkout...";
+    try {
+      const res = await fetch(CONFIG.checkoutEndpoint, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(payload) });
+      const out = await res.json();
+      if (!res.ok || !out.url) throw new Error(out.error || "Checkout unavailable");
+      window.location.href = out.url;
+    } catch (e) {
+      msg.className = "status err"; msg.textContent = "Online payment isn't available right now. No problem, we'll send you an invoice.";
+      btn.disabled = false; btn.textContent = label;
+    }
+  });
+  box.append(btn, msg); pay.appendChild(box);
+}
+
+function showThanks(data, viaEmail) {
+  form.style.display = "none";
+  const t = $("thanks"); t.style.display = "block";
+  $("thanks-msg").textContent = viaEmail
+    ? "Your email app should have opened with your details. Send it and we'll follow up within 2 business days. If nothing opened, email " + CONFIG.fallbackEmail + "."
+    : "We got your sign-up and will follow up within 2 business days with an invoice or payment details.";
+  buildPayBox(data); t.focus(); t.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+form.addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  statusEl.className = "status"; statusEl.textContent = "";
+  const d = Object.fromEntries(new FormData(form).entries());
+  if (d.website) return;
+  const c = (v) => String(v || "").trim();
+  const data = { org: c(d.org), contact: c(d.contact), email: c(d.email), phone: c(d.phone), level: c(d.level), notes: c(d.notes) };
+  const err = (m) => { statusEl.className = "status err"; statusEl.textContent = m; };
+  if (!data.org || !data.contact || !data.email || !data.level) return err("Please fill in your business, name, email and a sponsorship level.");
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(data.email)) return err("That email address doesn't look right.");
+  if (!CONFIG.formEndpoint) {
+    const body = ["Business: " + data.org, "Name: " + data.contact, "Email: " + data.email, "Phone: " + data.phone, "Level: " + LEVELS[data.level].name, "Notes: " + data.notes].join("\n");
+    window.location.href = "mailto:" + CONFIG.fallbackEmail + "?subject=" + encodeURIComponent("Sponsorship sign-up: " + data.org + " (" + LEVELS[data.level].name + ")") + "&body=" + encodeURIComponent(body);
+    showThanks(data, true); return;
+  }
+  submitBtn.disabled = true; submitBtn.textContent = "Sending...";
+  try {
+    const params = new URLSearchParams({ ...data, level: LEVELS[data.level].name, levelKey: data.level, program: "summit" });
+    await fetch(CONFIG.formEndpoint, { method: "POST", mode: "no-cors", body: params });
+    showThanks(data, false);
+  } catch (e) {
+    err("Something went wrong sending that. Please email " + CONFIG.fallbackEmail + " and we'll follow up.");
+    submitBtn.disabled = false; submitBtn.textContent = "Submit sponsorship";
+  }
+});
+
+// Donations (no perks)
+const giveAmt = $("give-amount"), giveStatus = $("give-status"), giveBtn = $("give-btn");
+document.querySelectorAll("#give-amts [data-amt]").forEach((b) => b.addEventListener("click", () => {
+  giveAmt.value = b.dataset.amt;
+  document.querySelectorAll("#give-amts [data-amt]").forEach((x) => x.classList.toggle("sel", x === b));
+}));
+giveAmt.addEventListener("input", () => document.querySelectorAll("#give-amts [data-amt]").forEach((x) => x.classList.remove("sel")));
+giveBtn.addEventListener("click", async () => {
+  giveStatus.className = "status"; giveStatus.textContent = "";
+  const err = (m) => { giveStatus.className = "status err"; giveStatus.textContent = m; };
+  const amount = Number(giveAmt.value), name = $("give-name").value.trim(), email = $("give-email").value.trim();
+  if (!Number.isFinite(amount) || amount < 5) return err("Enter an amount of at least $5.");
+  if (!name) return err("Please add your name.");
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return err("Please add a valid email so we can send your receipt.");
+  giveBtn.disabled = true; giveBtn.textContent = "Opening checkout...";
+  try {
+    const res = await fetch(CONFIG.checkoutEndpoint, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ org: "summit", tier: "donation", amount, name, email }) });
+    const out = await res.json();
+    if (!res.ok || !out.url) throw new Error(out.error || "Checkout unavailable");
+    window.location.href = out.url;
+  } catch (e) {
+    err("Online giving isn't available right now. Please email " + CONFIG.fallbackEmail + " and we'll help.");
+    giveBtn.disabled = false; giveBtn.textContent = "Donate";
+  }
+});
+
+const q = new URLSearchParams(window.location.search).get("status");
+if (q === "cancelled") $("cancelled-banner").style.display = "block";
+if (q === "success") { $("signup").style.display = "none"; $("levels").style.display = "none"; $("give").style.display = "none"; document.querySelector(".dl").style.display = "none"; $("confirmation-view").style.display = "block"; }
+</script>
+</body>
+</html>
